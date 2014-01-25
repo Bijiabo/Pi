@@ -14,4 +14,4 @@ var LEDopen = function(){
             });
         });
     }
-var toggleLED = setInterval(LEDopen(),500);
+var toggleLED = setInterval(function(){LEDopen()},500);
