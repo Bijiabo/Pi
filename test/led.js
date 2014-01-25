@@ -2,7 +2,6 @@
  * Created by root on 14-1-25.
  */
 var gpio = require("../pi-gpio"),
-    should = require("should"),
     fs = require("fs");
 var LED_port = 7;
 var openLED = function(){
