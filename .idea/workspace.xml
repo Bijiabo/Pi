@@ -56,7 +56,7 @@
       <file leaf-file-name="led.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/led.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="33" selection-start="72" selection-end="72" vertical-scroll-proportion="0.02907916" vertical-offset="0" max-vertical-offset="619">
+            <state line="12" column="17" selection-start="332" selection-end="332" vertical-scroll-proportion="0.2907916" vertical-offset="0" max-vertical-offset="619">
               <folding>
                 <element signature="e#0#38#0" expanded="false" />
               </folding>
@@ -208,7 +208,11 @@
       <created>1390664805886</created>
       <updated>1390664805886</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="LED&#10;">
+      <created>1390664878654</created>
+      <updated>1390664878654</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -220,7 +224,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33056995" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24972737" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24972737" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -248,7 +252,8 @@
       <TodoPanelSettings />
     </option>
     <MESSAGE value="LED" />
-    <option name="LAST_COMMIT_MESSAGE" value="LED" />
+    <MESSAGE value="LED&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="LED&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -277,7 +282,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/led.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="33" selection-start="72" selection-end="72" vertical-scroll-proportion="0.02907916" vertical-offset="0" max-vertical-offset="619">
+        <state line="12" column="17" selection-start="332" selection-end="332" vertical-scroll-proportion="0.2907916" vertical-offset="0" max-vertical-offset="619">
           <folding>
             <element signature="e#0#38#0" expanded="false" />
           </folding>

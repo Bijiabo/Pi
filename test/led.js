@@ -6,11 +6,11 @@ var gpio = require("../pi-gpio"),
 var LED_port = 7;
 var openLED = function(){
     gpio.write(LED_port,1,function(){
-        var close=setTimeout(function(){
-            gpio.close(LED_port,function(){
-                openLED();
-            });
-        },500);
+//        var close=setTimeout(function(){
+//            gpio.close(LED_port,function(){
+//                openLED();
+//            });
+//        },500);
     });
 }
 gpio.open(7,'output',function(err){
