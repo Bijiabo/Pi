@@ -14,5 +14,5 @@ var openLED = function(){
     });
 }
 gpio.open(7,'output',function(err){
-    openLED();
+    var open7 = setInterval(function(){openLED()},100);
 });
