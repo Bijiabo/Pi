@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f5d96a91-0b1a-40bd-9c18-5f50052a956a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/led.js" afterPath="$PROJECT_DIR$/test/led.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="pi-gpio.iws" />
@@ -53,13 +53,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="led.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="led.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/led.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="55" selection-start="606" selection-end="606" vertical-scroll-proportion="0.40710825" vertical-offset="0" max-vertical-offset="619">
+            <state line="17" column="0" selection-start="607" selection-end="607" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="378">
               <folding>
                 <element signature="e#0#38#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="38" selection-start="50" selection-end="50" vertical-scroll-proportion="0.09090909" vertical-offset="0" max-vertical-offset="594">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -78,6 +87,7 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/test/led.js" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -232,7 +242,11 @@
       <created>1390666284261</created>
       <updated>1390666284261</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="debug&#10;">
+      <created>1390666387086</created>
+      <updated>1390666387086</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -303,10 +317,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/led.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="55" selection-start="606" selection-end="606" vertical-scroll-proportion="0.40710825" vertical-offset="0" max-vertical-offset="619">
+        <state line="17" column="0" selection-start="607" selection-end="607" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="378">
           <folding>
             <element signature="e#0#38#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="38" selection-start="50" selection-end="50" vertical-scroll-proportion="0.09090909" vertical-offset="0" max-vertical-offset="594">
+          <folding />
         </state>
       </provider>
     </entry>
