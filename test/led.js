@@ -32,8 +32,8 @@ var write = function(port){
 }
 //LEDopen2();
 
-gpio.open(port,'output',function(err){
-    var writeLED = setInterval(function(){
-        gpio.write(port,1);
-    },200);
+gpio.open(11,'output',function(err){
+    gpio.write(11,1,function(){
+        var toggleLED = setInterval(function(){LEDopen()},500);
+    });
 })
