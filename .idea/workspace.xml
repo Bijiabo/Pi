@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f5d96a91-0b1a-40bd-9c18-5f50052a956a" name="Default" comment="add fastgpio&#10;">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/rpi-gpio/.npmignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/rpi-gpio/MIT-LICENSE.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/rpi-gpio/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/rpi-gpio/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/rpi-gpio/spec/rpi-gpio-spec.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/rpi-gpio/rpi-gpio.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/rpi-gpio/specs.sh" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/npm-debug.log" afterPath="" />
+    <list default="true" id="f5d96a91-0b1a-40bd-9c18-5f50052a956a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/led.js" afterPath="$PROJECT_DIR$/test/led.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -43,19 +35,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="126">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="led.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/led.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="0" selection-start="244" selection-end="244" vertical-scroll-proportion="0.2907916" vertical-offset="0" max-vertical-offset="619">
+            <state line="9" column="29" selection-start="226" selection-end="226" vertical-scroll-proportion="0.20355412" vertical-offset="0" max-vertical-offset="619">
               <folding>
                 <element signature="e#0#38#0" expanded="false" />
               </folding>
@@ -295,7 +278,11 @@
       <created>1390750008341</created>
       <updated>1390750008341</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="test led&#10;">
+      <created>1390750868428</created>
+      <updated>1390750868428</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -338,10 +325,10 @@
     <MESSAGE value="LED&#10;" />
     <MESSAGE value="debug&#10;" />
     <MESSAGE value="test led2&#10;" />
-    <MESSAGE value="test led&#10;" />
     <MESSAGE value="add fastgpio" />
     <MESSAGE value="add fastgpio&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="add fastgpio&#10;" />
+    <MESSAGE value="test led&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="test led&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -486,19 +473,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="619">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/fastgpio.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="19" selection-start="137" selection-end="138" vertical-scroll-proportion="0.11631664" vertical-offset="0" max-vertical-offset="619">
           <folding>
             <element signature="e#0#38#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="1" selection-end="1" vertical-scroll-proportion="0.02907916" vertical-offset="0" max-vertical-offset="619">
+          <folding />
         </state>
       </provider>
     </entry>
@@ -511,7 +498,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/led.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="244" selection-end="244" vertical-scroll-proportion="0.2907916" vertical-offset="0" max-vertical-offset="619">
+        <state line="9" column="29" selection-start="226" selection-end="226" vertical-scroll-proportion="0.20355412" vertical-offset="0" max-vertical-offset="619">
           <folding>
             <element signature="e#0#38#0" expanded="false" />
           </folding>
