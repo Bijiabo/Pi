@@ -7,16 +7,12 @@ var port = 7;
 var LEDopen = function(){
         gpio.open(port, "output", function(err) {     // Open pin 16 for output
             console.log('open----------------------------');
-            write(port);
+            gpio.write(port, 1, function() {          // Set pin 16 high (1)
+                console.log('write');
+                gpio.close(port);                     // Close pin 16
+                console.log('close');
+            });
         });
     }
-var write = function(port){
-    gpio.write(port,1,function(){
-        console.log('write donw --'+new Date());
-        setTimeout(function(){
-            write(port);
-        },500);
-    })
-}
-//var toggleLED = setInterval(function(){LEDopen()},500);
-LEDopen();
+var toggleLED = setInterval(function(){LEDopen()},500);
+
