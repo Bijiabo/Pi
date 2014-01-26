@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f5d96a91-0b1a-40bd-9c18-5f50052a956a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/led.js" afterPath="$PROJECT_DIR$/test/led.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="pi-gpio.iws" />
@@ -29,7 +29,7 @@
       <file leaf-file-name="pi-gpio.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pi-gpio.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="123" column="0" selection-start="2972" selection-end="2972" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2412">
+            <state line="123" column="0" selection-start="2972" selection-end="2972" vertical-scroll-proportion="0.0" vertical-offset="2214" max-vertical-offset="2412">
               <folding />
             </state>
           </provider>
@@ -38,7 +38,7 @@
       <file leaf-file-name="package.json" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="29" selection-start="572" selection-end="572" vertical-scroll-proportion="-12.0" vertical-offset="0" max-vertical-offset="576">
+            <state line="18" column="29" selection-start="572" selection-end="572" vertical-scroll-proportion="0.0" vertical-offset="324" max-vertical-offset="576">
               <folding />
             </state>
           </provider>
@@ -53,10 +53,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="led.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="led.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/led.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="0" selection-start="607" selection-end="607" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="378">
+            <state line="29" column="11" selection-start="1045" selection-end="1045" vertical-scroll-proportion="0.7826087" vertical-offset="0" max-vertical-offset="621">
               <folding>
                 <element signature="e#0#38#0" expanded="false" />
               </folding>
@@ -64,10 +64,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="README.md" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="38" selection-start="50" selection-end="50" vertical-scroll-proportion="0.09090909" vertical-offset="0" max-vertical-offset="594">
+            <state line="3" column="50" selection-start="62" selection-end="62" vertical-scroll-proportion="0.0" vertical-offset="54" max-vertical-offset="162">
               <folding />
             </state>
           </provider>
@@ -86,8 +86,8 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/test/led.js" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/test/led.js" />
       </list>
     </option>
   </component>
@@ -167,6 +167,7 @@
     <property name="options.searchVisible" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="/var/www/ts/apps/w3g" />
+    <property name="FullScreen" value="false" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
@@ -246,19 +247,22 @@
       <created>1390666387086</created>
       <updated>1390666387086</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="debug&#10;">
+      <created>1390667036430</created>
+      <updated>1390667036430</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-7" width="1857" height="1088" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33056995" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32988626" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24972737" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24972737" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -268,6 +272,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -303,7 +308,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="29" selection-start="572" selection-end="572" vertical-scroll-proportion="-12.0" vertical-offset="0" max-vertical-offset="576">
+        <state line="18" column="29" selection-start="572" selection-end="572" vertical-scroll-proportion="0.0" vertical-offset="324" max-vertical-offset="576">
           <folding />
         </state>
       </provider>
@@ -317,7 +322,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/led.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="0" selection-start="607" selection-end="607" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="378">
+        <state line="17" column="0" selection-start="607" selection-end="607" vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="378">
           <folding>
             <element signature="e#0#38#0" expanded="false" />
           </folding>
@@ -326,8 +331,82 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="38" selection-start="50" selection-end="50" vertical-scroll-proportion="0.09090909" vertical-offset="0" max-vertical-offset="594">
+        <state line="3" column="50" selection-start="62" selection-end="62" vertical-scroll-proportion="0.0" vertical-offset="54" max-vertical-offset="162">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pi-gpio.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="123" column="0" selection-start="2972" selection-end="2972" vertical-scroll-proportion="0.0" vertical-offset="2214" max-vertical-offset="2412">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="29" selection-start="572" selection-end="572" vertical-scroll-proportion="0.0" vertical-offset="324" max-vertical-offset="576">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/pi-gpio.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="83" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1854">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/led.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="54" selection-start="605" selection-end="605" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="378">
+          <folding>
+            <element signature="e#0#38#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="50" selection-start="62" selection-end="62" vertical-scroll-proportion="0.0" vertical-offset="54" max-vertical-offset="162">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="29" selection-start="572" selection-end="572" vertical-scroll-proportion="0.0" vertical-offset="324" max-vertical-offset="576">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/pi-gpio.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="83" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1854">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="50" selection-start="62" selection-end="62" vertical-scroll-proportion="0.0" vertical-offset="54" max-vertical-offset="162">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pi-gpio.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="123" column="0" selection-start="2972" selection-end="2972" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2412">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/led.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="11" selection-start="1045" selection-end="1045" vertical-scroll-proportion="0.7826087" vertical-offset="0" max-vertical-offset="621">
+          <folding>
+            <element signature="e#0#38#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

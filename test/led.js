@@ -15,3 +15,16 @@ var LEDopen = function(){
         });
     }
 var toggleLED = setInterval(function(){LEDopen()},500);
+
+var LED_port2 = 11;
+var LEDopen2 = function(){
+    gpio.open(LED_port2, "output", function(err) {     // Open pin 16 for output
+        console.log('open----------------------------');
+        gpio.write(LED_port2, 1, function() {          // Set pin 16 high (1)
+            console.log('write');
+            gpio.close(LED_port2);                     // Close pin 16
+//            console.log('close');
+        });
+    });
+}
+LEDopen2();
