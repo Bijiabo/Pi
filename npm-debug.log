@@ -1,0 +1,148 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs', '/usr/bin/npm', 'install', 'rpio' ]
+2 info using npm@1.2.18
+3 info using node@v0.10.15
+4 verbose read json /home/boooo/dev/raspberry/Pi/package.json
+5 verbose from cache /home/boooo/dev/raspberry/Pi/package.json
+6 verbose readDependencies using package.json deps
+7 verbose cache add [ 'rpio', null ]
+8 verbose cache add name=undefined spec="rpio" args=["rpio",null]
+9 verbose parsed url { protocol: null,
+9 verbose parsed url   slashes: null,
+9 verbose parsed url   auth: null,
+9 verbose parsed url   host: null,
+9 verbose parsed url   port: null,
+9 verbose parsed url   hostname: null,
+9 verbose parsed url   hash: null,
+9 verbose parsed url   search: null,
+9 verbose parsed url   query: null,
+9 verbose parsed url   pathname: 'rpio',
+9 verbose parsed url   path: 'rpio',
+9 verbose parsed url   href: 'rpio' }
+10 silly lockFile 56b62268-rpio rpio
+11 verbose lock rpio /home/boooo/.npm/56b62268-rpio.lock
+12 silly lockFile 56b62268-rpio rpio
+13 silly lockFile 56b62268-rpio rpio
+14 verbose addNamed [ 'rpio', '' ]
+15 verbose addNamed [ null, '*' ]
+16 silly lockFile 08385f80-rpio rpio@
+17 verbose lock rpio@ /home/boooo/.npm/08385f80-rpio.lock
+18 silly addNameRange { name: 'rpio', range: '*', hasData: false }
+19 verbose url raw rpio
+20 verbose url resolving [ 'https://registry.npmjs.org/', './rpio' ]
+21 verbose url resolved https://registry.npmjs.org/rpio
+22 info trying registry request attempt 1 at 23:19:05
+23 verbose etag "6DOZ6HWMTXNCR9CW2P86KKBLX"
+24 http GET https://registry.npmjs.org/rpio
+25 http 304 https://registry.npmjs.org/rpio
+26 silly registry.get cb [ 304,
+26 silly registry.get   { date: 'Sun, 26 Jan 2014 15:19:06 GMT',
+26 silly registry.get     server: 'Apache',
+26 silly registry.get     connection: 'Keep-Alive',
+26 silly registry.get     'keep-alive': 'timeout=10, max=50',
+26 silly registry.get     etag: '"6DOZ6HWMTXNCR9CW2P86KKBLX"',
+26 silly registry.get     vary: 'Accept' } ]
+27 verbose etag rpio from cache
+28 silly addNameRange number 2 { name: 'rpio', range: '*', hasData: true }
+29 silly addNameRange versions [ 'rpio',
+29 silly addNameRange   [ '0.0.1', '0.0.2', '0.0.3', '0.0.4', '0.0.5', '0.0.6' ] ]
+30 verbose addNamed [ 'rpio', '0.0.6' ]
+31 verbose addNamed [ '0.0.6', '0.0.6' ]
+32 silly lockFile 76e095c3-rpio-0-0-6 rpio@0.0.6
+33 verbose lock rpio@0.0.6 /home/boooo/.npm/76e095c3-rpio-0-0-6.lock
+34 verbose read json /home/boooo/.npm/rpio/0.0.6/package/package.json
+35 silly lockFile 76e095c3-rpio-0-0-6 rpio@0.0.6
+36 silly lockFile 76e095c3-rpio-0-0-6 rpio@0.0.6
+37 silly lockFile 08385f80-rpio rpio@
+38 silly lockFile 08385f80-rpio rpio@
+39 silly resolved [ { name: 'rpio',
+39 silly resolved     version: '0.0.6',
+39 silly resolved     description: 'Raspberry Pi GPIO library with fast mmap() access',
+39 silly resolved     main: './lib/rpio.js',
+39 silly resolved     scripts:
+39 silly resolved      { test: 'echo "Error: no test specified" && exit 1',
+39 silly resolved        install: 'node-gyp rebuild' },
+39 silly resolved     repository: { type: 'git', url: 'git://github.com/jperkin/node-rpio.git' },
+39 silly resolved     keywords: [ 'rpi', 'gpio', 'raspberry', 'pi' ],
+39 silly resolved     author:
+39 silly resolved      { name: 'Jonathan Perkin',
+39 silly resolved        email: 'jonathan@perkin.org.uk',
+39 silly resolved        url: 'http://www.perkin.org.uk' },
+39 silly resolved     license: 'ISC / GPL',
+39 silly resolved     gypfile: true,
+39 silly resolved     readme: 'node-rpio\n=========\n\nThis is a node.js add-on which wraps around Mike McCauley\'s\n[bcm2835](http://www.open.com.au/mikem/bcm2835/) library to allow `mmap`\naccess via `/dev/mem` to the GPIO pins.\n\nIf you want something more featureful then for now you should check out James\nBarwell\'s [rpio-gpio.js](https://github.com/JamesBarwell/rpi-gpio.js).  The\nreason for me writing this module instead of using James\' is that his uses the\n`/sys` interface which is too slow for my requirements.\n\n## Install\n\nEasily install the latest via npm:\n\n```bash\n$ npm install rpio\n```\n\n## API\n\n```js\nvar rpio = require(\'rpio\')\n\n// Enable a pin and mark as read-only\nrpio.setInput(11)\n\n// Enable a pin and mark as read-write\nrpio.setOutput(12)\n\n// Read value of pin\nconsole.log(\'pin 11 is set to \' + rpio.read(11))\n\n// Set pin high (i.e. write \'1\' to it)\nrpio.write(12, rpio.HIGH)\n\n// Set pin low (i.e. write \'0\' to it)\nrpio.write(12, rpio.LOW)\n```\n\n## Simple demo\n\n```js\n/*\n * Simple demo to flash pin 11 at 100Hz (assuming it\'s routed to an LED).\n */\nvar rpio = require(\'rpio\')\n\n// Set the pin for write mode\nrpio.setOutput(11)\n\n/*\n * Set the pin high every 10ms, and low 5ms after each transition to high.\n */\nsetInterval(function() {\n\n  rpio.write(11, rpio.HIGH)\n\n  setTimeout(function() {\n    rpio.write(11, rpio.LOW)\n  }, 5)\n\n}, 10)\n```\n\n## Authors and licenses\n\nMike McCauley wrote src/bcm2835.{cc,h} which are under the GPL.\n\nI wrote the rest, which is under the ISC license unless otherwise specified.\n',
+39 silly resolved     readmeFilename: 'README.md',
+39 silly resolved     _id: 'rpio@0.0.6',
+39 silly resolved     _from: 'rpio@' } ]
+40 info install rpio@0.0.6 into /home/boooo/dev/raspberry/Pi
+41 info installOne rpio@0.0.6
+42 verbose from cache /home/boooo/.npm/rpio/0.0.6/package/package.json
+43 info /home/boooo/dev/raspberry/Pi/node_modules/rpio unbuild
+44 verbose read json /home/boooo/dev/raspberry/Pi/node_modules/rpio/package.json
+45 verbose tar unpack /home/boooo/.npm/rpio/0.0.6/package.tgz
+46 silly lockFile ade53272-v-raspberry-Pi-node-modules-rpio /home/boooo/dev/raspberry/Pi/node_modules/rpio
+47 verbose lock /home/boooo/dev/raspberry/Pi/node_modules/rpio /home/boooo/.npm/ade53272-v-raspberry-Pi-node-modules-rpio.lock
+48 silly lockFile 9f95a7f4-boooo-npm-rpio-0-0-6-package-tgz /home/boooo/.npm/rpio/0.0.6/package.tgz
+49 verbose lock /home/boooo/.npm/rpio/0.0.6/package.tgz /home/boooo/.npm/9f95a7f4-boooo-npm-rpio-0-0-6-package-tgz.lock
+50 silly gunzTarPerm modes [ '755', '644' ]
+51 silly gunzTarPerm extractEntry package.json
+52 silly gunzTarPerm extractEntry README.md
+53 silly gunzTarPerm extractEntry binding.gyp
+54 silly gunzTarPerm extractEntry lib/rpio.js
+55 silly gunzTarPerm extractEntry src/bcm2835.cc
+56 silly gunzTarPerm extractEntry src/bcm2835.h
+57 silly gunzTarPerm extractEntry src/rpio.cc
+58 verbose read json /home/boooo/dev/raspberry/Pi/node_modules/rpio/package.json
+59 silly lockFile ade53272-v-raspberry-Pi-node-modules-rpio /home/boooo/dev/raspberry/Pi/node_modules/rpio
+60 silly lockFile ade53272-v-raspberry-Pi-node-modules-rpio /home/boooo/dev/raspberry/Pi/node_modules/rpio
+61 silly lockFile 9f95a7f4-boooo-npm-rpio-0-0-6-package-tgz /home/boooo/.npm/rpio/0.0.6/package.tgz
+62 silly lockFile 9f95a7f4-boooo-npm-rpio-0-0-6-package-tgz /home/boooo/.npm/rpio/0.0.6/package.tgz
+63 info preinstall rpio@0.0.6
+64 verbose from cache /home/boooo/dev/raspberry/Pi/node_modules/rpio/package.json
+65 verbose readDependencies using package.json deps
+66 verbose from cache /home/boooo/dev/raspberry/Pi/node_modules/rpio/package.json
+67 verbose readDependencies using package.json deps
+68 silly resolved []
+69 verbose about to build /home/boooo/dev/raspberry/Pi/node_modules/rpio
+70 info build /home/boooo/dev/raspberry/Pi/node_modules/rpio
+71 verbose from cache /home/boooo/dev/raspberry/Pi/node_modules/rpio/package.json
+72 verbose linkStuff [ false,
+72 verbose linkStuff   false,
+72 verbose linkStuff   false,
+72 verbose linkStuff   '/home/boooo/dev/raspberry/Pi/node_modules' ]
+73 info linkStuff rpio@0.0.6
+74 verbose linkBins rpio@0.0.6
+75 verbose linkMans rpio@0.0.6
+76 verbose rebuildBundles rpio@0.0.6
+77 info install rpio@0.0.6
+78 verbose unsafe-perm in lifecycle false
+79 verbose set uid from=0 to=1000
+80 silly exec sh "-c" "node-gyp rebuild"
+81 silly sh,-c,node-gyp rebuild,/home/boooo/dev/raspberry/Pi/node_modules/rpio spawning
+82 info rpio@0.0.6 Failed to exec install script
+83 info /home/boooo/dev/raspberry/Pi/node_modules/rpio unbuild
+84 verbose from cache /home/boooo/dev/raspberry/Pi/node_modules/rpio/package.json
+85 warn This failure might be due to the use of legacy binary "node"
+86 warn For further explanations, please read
+/usr/share/doc/nodejs/README.Debian
+87 info preuninstall rpio@0.0.6
+88 info uninstall rpio@0.0.6
+89 verbose true,/home/boooo/dev/raspberry/Pi/node_modules,/home/boooo/dev/raspberry/Pi/node_modules unbuild rpio@0.0.6
+90 info postuninstall rpio@0.0.6
+91 error rpio@0.0.6 install: `node-gyp rebuild`
+91 error `sh "-c" "node-gyp rebuild"` failed with 1
+92 error Failed at the rpio@0.0.6 install script.
+92 error This is most likely a problem with the rpio package,
+92 error not with npm itself.
+92 error Tell the author that this fails on your system:
+92 error     node-gyp rebuild
+92 error You can get their info via:
+92 error     npm owner ls rpio
+92 error There is likely additional logging output above.
+93 error System Linux 3.11.0-15-generic
+94 error command "/usr/bin/nodejs" "/usr/bin/npm" "install" "rpio"
+95 error cwd /home/boooo/dev/raspberry/Pi
+96 error node -v v0.10.15
+97 error npm -v 1.2.18
+98 error code ELIFECYCLE
+99 verbose exit [ 1, true ]
