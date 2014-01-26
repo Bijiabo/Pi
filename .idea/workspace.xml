@@ -38,7 +38,7 @@
       <file leaf-file-name="led.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/led.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="20" selection-start="452" selection-end="452" vertical-scroll-proportion="0.37802908" vertical-offset="0" max-vertical-offset="619">
+            <state line="17" column="14" selection-start="502" selection-end="502" vertical-scroll-proportion="0.4361874" vertical-offset="0" max-vertical-offset="619">
               <folding>
                 <element signature="e#0#38#0" expanded="false" />
               </folding>
@@ -313,7 +313,11 @@
       <created>1390751855133</created>
       <updated>1390751855133</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="test led&#10;">
+      <created>1390752842447</created>
+      <updated>1390752842447</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -545,7 +549,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/led.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="20" selection-start="452" selection-end="452" vertical-scroll-proportion="0.37802908" vertical-offset="0" max-vertical-offset="619">
+        <state line="17" column="14" selection-start="502" selection-end="502" vertical-scroll-proportion="0.4361874" vertical-offset="0" max-vertical-offset="619">
           <folding>
             <element signature="e#0#38#0" expanded="false" />
           </folding>

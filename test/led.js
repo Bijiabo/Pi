@@ -13,7 +13,9 @@ var LEDopen = function(){
 var write = function(port){
     gpio.write(port,1,function(){
         console.log('write donw --'+new Date());
-        write(port);
+        setTimeout(function(){
+            write(port);
+        },50);
     })
 }
 //var toggleLED = setInterval(function(){LEDopen()},500);
