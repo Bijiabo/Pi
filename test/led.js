@@ -9,7 +9,7 @@ var LEDopen = function(){
             console.log('open----------------------------');
             gpio.write(LED_port, 1, function() {          // Set pin 16 high (1)
                 console.log('write');
-                gpio.close(LED_port);                     // Close pin 16
+//                gpio.close(LED_port);                     // Close pin 16
                 console.log('close');
             });
         });
