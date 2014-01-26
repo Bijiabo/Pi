@@ -15,7 +15,7 @@ var write = function(port){
         console.log('write donw --'+new Date());
         setTimeout(function(){
             write(port);
-        },50);
+        },500);
     })
 }
 //var toggleLED = setInterval(function(){LEDopen()},500);
