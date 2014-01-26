@@ -14,7 +14,8 @@ var LEDopen = function(){
             });
         });
     }
-var toggleLED = setInterval(function(){LEDopen()},500);
+LEDopen();
+//var toggleLED = setInterval(function(){LEDopen()},500);
 
 var LED_port2 = 11;
 var LEDopen2 = function(){
