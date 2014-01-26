@@ -22,9 +22,13 @@ var LEDopen2 = function(){
         console.log('open----------------------------');
         gpio.write(LED_port2, 1, function() {          // Set pin 16 high (1)
             console.log('write');
-            gpio.close(LED_port2,function(){LEDopen2()});                     // Close pin 16
+            gpio.close(LED_port2,function(){KeepPUtout(LED_port2)});                     // Close pin 16
 //            console.log('close');
         });
     });
 }
-LEDopen2();
+var KeepPUtout = function(port){
+    console.log('keepPutout*******');
+    gpio.write(port, 1, function(){KeepPUtout(port)});
+}
+setTimeout(function(){LEDopen2()},100);
